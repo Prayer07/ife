@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Layout Technique</title>
+    <style>
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 110px;
+        padding: 10px;
+      }
+
+      .profile-picture {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        
+      }
+
+      .letter-preview {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        flex: 1;
+      }      
+
+      .name {
+        font-weight: bold;
+      }
+
+      .surname {
+        color: rgb(103, 101, 101);
+      }
+
+      .popular {
+        color: rgb(103, 101, 101);
+      }
+
+      .button {
+        margin-left: 20px;
+        width: 79px;
+      }
+
+    </style>
+  </head>
+  <body>
+   
+    <div class="profile">
+    <div class="picture">
+      <img class="profile-picture" src="thumbnails/images.webp">
+    </div>
+
+    <div class="letter-preview">
+        <div class="name">
+          oliver
+        </div>
+        <div class="surname">
+           the cat
+        </div>
+        <div class="popular">
+          popular
+        </div>
+     </div>
+    </div>
+    <div class="button">
+      <button class="add">
+        Add friend
+      </button>
+    </div>
+  </body>
+</html>
